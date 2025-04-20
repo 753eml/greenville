@@ -71,14 +71,17 @@
   <div class="content">
     <h1>GV script (For maximillianrh/Millian2010)</h1>
     <p>I got other stuff <a href="https://753eml.github.io" class="link" target="_blank">here</a>.</p>
-    <p class="loadstring-text" id="loadstring-text">Script: <code>loadstring(game:HttpGet("https://raw.githubusercontent.com/753eml/iyrmbeta/refs/heads/main/Quickload.lua"))()</code></p>
-    <p class="loadstring-text" id="loadstring-text">Dump: <code>loadstring(game:HttpGet("https://raw.githubusercontent.com/753eml/iyrmbeta/refs/heads/main/Quickload.lua"))()</code></p>
-    <button class="button" onclick="window.location.href='https://753eml.github.io/iy_r-m';">Non-beta version</button>
+    <p class="loadstring-text" id="loadstring-text">Script: <code>loadstring(game:HttpGet("https://raw.githubusercontent.com/753eml/greenville/refs/heads/main/execution.lua"))()</code></p>
+    <p class="loadstring-text" id="loadstring-text">
+  Dump: <a href="https://github.com/753eml/greenville/blob/main/dump.lua" target="_blank">
+    <code>https://github.com/753eml/greenville/blob/main/dump.lua</code>
+  </a>
+</p>
   </div>
   <script>
     document.getElementById("loadstring-text").addEventListener("click", function() {
       var tempInput = document.createElement("input");
-      tempInput.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/753eml/iyrmbeta/refs/heads/main/Quickload.lua'))()";
+      tempInput.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/753eml/greenville/refs/heads/main/execution.lua'))()";
       document.body.appendChild(tempInput);
       tempInput.select();
       document.execCommand("copy");
