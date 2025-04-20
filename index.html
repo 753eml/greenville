@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>753eml's IY:R-M (B)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      height: 100vh;
+      background-image: url('https://raw.githubusercontent.com/753eml/greenville/refs/heads/main/RobloxScreenShot20250421_011656697.png');
+      background-size: cover;
+      background-position: top center;
+      overflow: hidden;
+    }
+    .content {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #32cd32;
+    }
+    .link {
+      font-size: 1.2rem;
+      color: #1e90ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .link:hover {
+      color: #1569c7;
+    }
+    .loadstring-text {
+      font-size: 1rem;
+      color: #32cd32;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .loadstring-text code {
+      color: #32cd32;
+    }
+    .loadstring-text:hover {
+      color: #28a828;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: transparent;
+      color: #32cd32;
+      border: 2px solid #32cd32;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #32cd32;
+      color: white; 
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>GV script (For maximillianrh/Millian2010)</h1>
+    <p>I got other stuff <a href="https://753eml.github.io" class="link" target="_blank">here</a>.</p>
+    <p class="loadstring-text" id="loadstring-text">Script: <code>loadstring(game:HttpGet("https://raw.githubusercontent.com/753eml/iyrmbeta/refs/heads/main/Quickload.lua"))()</code></p>
+    <p class="loadstring-text" id="loadstring-text">Dump: <code>loadstring(game:HttpGet("https://raw.githubusercontent.com/753eml/iyrmbeta/refs/heads/main/Quickload.lua"))()</code></p>
+    <button class="button" onclick="window.location.href='https://753eml.github.io/iy_r-m';">Non-beta version</button>
+  </div>
+  <script>
+    document.getElementById("loadstring-text").addEventListener("click", function() {
+      var tempInput = document.createElement("input");
+      tempInput.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/753eml/iyrmbeta/refs/heads/main/Quickload.lua'))()";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+    });
+  </script>
+
+</body>
+</html>
