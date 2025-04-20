@@ -40,14 +40,14 @@
     }
     .loadstring-text {
       font-size: 1rem;
-      color: black; /* changed to black */
+      color: #00fff5;
       margin-top: 20px;
       cursor: pointer;
       transition: color 0.3s ease;
     }
     .loadstring-text code {
-      color: black !important; /* force code text to black */
-      white-space: nowrap; /* prevent wrapping */
+      color: #00fff5 !important;
+      white-space: nowrap;
     }
     .loadstring-text:hover {
       color: #00fff5;
@@ -92,7 +92,6 @@
       tempInput.select();
       document.execCommand("copy");
       document.body.removeChild(tempInput);
-      alert("Script copied to clipboard!");
     });
   </script>
 </body>
